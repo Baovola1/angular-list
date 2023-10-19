@@ -1,0 +1,25 @@
+{
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Bob",
+      "job": "teacher",
+      "location": "Paris",
+      "disponible": "true"
+    },
+    {
+      "id": 2,
+      "name": "Jhon",
+      "job": "doctor",
+      "location": "Bordeaux",
+      "disponible": "true"
+    },
+    {
+      "id": 3,
+      "name": "Lucia",
+      "job": "Lauwer",
+      "location": "Nice",
+      "disponible": "false"
+    }
+  ]
+}

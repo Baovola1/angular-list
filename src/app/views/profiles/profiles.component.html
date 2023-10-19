@@ -1,0 +1,25 @@
+<div class="card">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Métier</th>
+      <th>Localisation</th>
+      <th>Disponibilité</th>
+    </tr>
+    <tr *ngFor="let profile of profiles$ | async">
+      <td>{{ profile.id }}</td>
+      <td>{{ profile.name }}</td>
+      <td>{{ profile.job }}</td>
+      <td>{{ profile.location }}</td>
+      <td>
+        <div *ngIf="dispo === true">
+          {{ profile.disponible === true ? "Disponible" : "Indisponible" }}
+        </div>
+      </td>
+      <td>
+        <!--<button (click)="handleDeleteProfile(profile)">Delete</button>-->
+      </td>
+    </tr>
+  </table>
+</div>
